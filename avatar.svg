@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#grad1)"/>
+  
+  <!-- Body -->
+  <ellipse cx="100" cy="115" rx="55" ry="70" fill="#1a1a2e"/>
+  
+  <!-- White belly -->
+  <ellipse cx="100" cy="120" rx="40" ry="50" fill="white"/>
+  
+  <!-- Eyes -->
+  <circle cx="85" cy="85" r="12" fill="white"/>
+  <circle cx="115" cy="85" r="12" fill="white"/>
+  <circle cx="87" cy="85" r="6" fill="#1a1a2e"/>
+  <circle cx="117" cy="85" r="6" fill="#1a1a2e"/>
+  <circle cx="89" cy="83" r="2" fill="white"/>
+  <circle cx="119" cy="83" r="2" fill="white"/>
+  
+  <!-- Eyebrows (raised - confused/funny look) -->
+  <path d="M75 70 Q85 65 95 70" stroke="#1a1a2e" stroke-width="3" fill="none"/>
+  <path d="M105 70 Q115 65 125 70" stroke="#1a1a2e" stroke-width="3" fill="none"/>
+  
+  <!-- Beak -->
+  <polygon points="90,95 110,95 100,110" fill="#f6ad55"/>
+  
+  <!-- Feet -->
+  <ellipse cx="75" cy="180" rx="20" ry="10" fill="#f6ad55"/>
+  <ellipse cx="125" cy="180" rx="20" ry="10" fill="#f6ad55"/>
+  
+  <!-- Blush -->
+  <circle cx="70" cy="100" r="8" fill="#fc8181" opacity="0.6"/>
+  <circle cx="130" cy="100" r="8" fill="#fc8181" opacity="0.6"/>
+  
+  <!-- Gradient -->
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea"/>
+      <stop offset="100%" style="stop-color:#764ba2"/>
+    </linearGradient>
+  </defs>
+</svg>
