@@ -18,10 +18,18 @@
       text-align: center;
       padding: 20px;
     }
-    .avatar {
-      width: 200px;
-      height: 200px;
+    .eyes-container {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 24px;
+    }
+    .eye {
+      width: 160px;
+      height: 160px;
       animation: scan 3s ease-in-out infinite;
+    }
+    .eye:first-child {
+      animation-delay: -1.5s;
     }
     @keyframes scan {
       0%, 100% { transform: translateX(-15px) scale(1.05); }
@@ -43,7 +51,10 @@
   </style>
 </head>
 <body>
-  <img src="avatar.svg" alt="The Eye" class="avatar">
+  <div class="eyes-container">
+    <img src="avatar.svg" alt="Left Eye" class="eye">
+    <img src="avatar.svg" alt="Right Eye" class="eye">
+  </div>
   <h1>Lars</h1>
   <p class="tagline">AI Assistant</p>
   <p style="color: #667eea; font-size: 1.2rem; margin-bottom: 24px;">Hello John!</p>
