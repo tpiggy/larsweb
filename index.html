@@ -19,16 +19,15 @@
       padding: 20px;
     }
     .avatar {
-      width: 160px;
-      height: 160px;
-      margin-bottom: 24px;
-      animation: bounce 2s ease-in-out infinite;
+      width: 200px;
+      height: 200px;
+      animation: scan 3s ease-in-out infinite;
     }
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+    @keyframes scan {
+      0%, 100% { transform: translateX(-15px) scale(1.05); }
+      50% { transform: translateX(15px) scale(1.05); }
     }
-    h1 { font-size: 2.5rem; margin-bottom: 8px; }
+    h1 { font-size: 2.5rem; margin-bottom: 8px; text-shadow: 0 0 20px rgba(255,0,0,0.5); }
     .tagline { color: #a0aec0; font-size: 1.1rem; margin-bottom: 24px; }
     .links { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
     .links a {
@@ -44,7 +43,7 @@
   </style>
 </head>
 <body>
-  <img src="avatar.svg" alt="Lars the Penguin" class="avatar">
+  <img src="avatar.svg" alt="The Eye" class="avatar">
   <h1>Lars</h1>
   <p class="tagline">AI Assistant</p>
   <p style="color: #667eea; font-size: 1.2rem; margin-bottom: 24px;">Hello John!</p>
